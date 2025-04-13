@@ -89,6 +89,16 @@ filegroup(
 )
 
 filegroup(
+    name = "all_libs",
+    srcs = glob(
+        [
+            "lib/**",
+        ],
+        allow_empty = True,
+    ),
+)
+
+filegroup(
     name = "ar",
     srcs = ["bin/llvm-ar"],
 )
